@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Products from "./components/Products";
-import Iphone16 from "./assets/Iphone16.jpg";
+import Iphone16 from "./assets/Iphone.jpg";
 import S24 from "./assets/s24.jpg";
 import Lenovo from "./assets/lenovo.jpg";
 import Pavilion from "./assets/pavilion.jpg";
