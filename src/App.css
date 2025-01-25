@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(#d0c8c8, #ececea);
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+.productDisplay {
+  display: flex;
+  margin: 10px auto;
+  padding: 15px;
+  width: 100%;
+  gap: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.categories {
+  padding: 10px;
+  display: flex;
+  gap: 30px;
+  background: rgba(133, 130, 130, 0.3);
+}
+.categories p {
+  padding: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #000000;
+}
+.categories p:hover {
+  padding: 10px;
+  background: linear-gradient(rgb(97, 133, 116), rgb(14, 21, 14));
+  border-radius: 10px;
+  color: aliceblue;
+}
+.categories input {
+  margin: 2px auto;
+  width: 500px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  font-size: 2.5em;
+}
+.cartDiv {
+  display: flex;
+}
+.cartDiv p {
+  position: absolute;
+  top: 10%;
+  right: 15px;
+  background: rgb(224, 24, 24);
+  color: aliceblue;
+  border-radius: 25px;
+}
+.cart {
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.productBox {
+  width: 300px;
+  height: 650px;
+  padding: 10px;
+  background: #d1d1cd;
+  position: relative;
+  border-radius: 10px;
+}
+.productImg {
+  width: 100%;
+  height: 50%;
+  box-shadow: 5px 5px 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.productBox h3 {
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+.productBox h4 {
+  padding: 6px 0;
+  text-align: justify;
+}
+.productBox h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.discountPrice {
+  display: flex;
+  gap: 20px;
+}
+.discountPrice strike {
+  font-size: 1em;
+}
+.discountPrice p {
+  padding: 5px;
+  background-color: antiquewhite;
+}
+.stock {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 40px;
+  background: rgb(185, 5, 5);
+  transform: skew(20deg);
+  box-shadow: 0 10px 12px #342323;
+}
+.stock p {
+  font-size: 1.5em;
+  color: rgb(232, 235, 239);
+}
+.productBox button {
+  position: absolute;
+  top: 90%;
+  left: 22px;
+  width: 80%;
+  height: 50px;
+  background: linear-gradient(rgb(97, 133, 116), rgb(14, 21, 14));
+  cursor: pointer;
+  border: none;
+  font-size: 1.5em;
+  border-radius: 10px;
+  color: aliceblue;
+  display: none;
+}
+.productBox:hover {
+  box-shadow: 12px 12px 12px #afb7b7;
+}
+.productBox:hover button {
+  display: block;
+}
+@media (max-width: 1800px) {
+  body {
+    padding: 10px;
+  }
+  .productDisplay {
+    margin: 4px auto;
+    padding: 6px;
+    width: 100%;
+    gap: 30px;
+  }
+  .categories {
+    padding: 3px;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .categories p {
+    padding: 2px;
+    font-size: 1.3em;
+  }
+  .categories p:hover {
+    padding: 2px;
+    border-radius: 10px;
+  }
+  .categories input {
+    margin: 0;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.3em;
+  }
+  .header {
+    height: 40px;
+    font-size: 1.5em;
+  }
+  .cartDiv {
+    display: flex;
+  }
+  .cartDiv p {
+    border-radius: 20px;
+  }
+  .cart {
+    width: 50px;
+    height: 40px;
+  }
+
+  .productBox {
+    width: 250px;
+    height: 430px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .productImg {
+    width: 100%;
+    height: 50%;
+    box-shadow: 2px 2px 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .productImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .productBox h3 {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  .productBox h4 {
+    padding: 3px 0;
+    font-size: 12px;
+    text-align: justify;
+  }
+  .productBox h2 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .discountPrice {
+    display: flex;
+    gap: 20px;
+  }
+  .discountPrice strike {
+    font-size: 1em;
+  }
+  .discountPrice p {
+    padding: 2px;
+    background-color: antiquewhite;
+  }
+  .stock {
+    
+    width: 40%;
+    height: 30px;
+    box-shadow: 0 7px 10px #efd0d0;
+  }
+  .stock p {
+    font-size: 16px;
+    color: rgb(232, 235, 239);
+  }
+  .productBox button {
+    width: 80%;
+    height: 30px;
+    font-size: 16px;
+  }
+  .productBox:hover {
+    box-shadow: 10px 10px 10px #afb7b7;
+  }
+}
